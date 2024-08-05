@@ -24,10 +24,10 @@ echo 'Restarting VPXA'
 
 2. Grant execution access to script file and do a test run
 
-   ```shell
-   chmod +x reset-eval.sh
-   ./reset-eval.
-   ```
+```
+chmod +x reset-eval.sh
+./reset-eval.
+```
 
 3. Add crontab job (Task Scheduler)
 
