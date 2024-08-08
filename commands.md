@@ -2,7 +2,7 @@
 
 ## Enable Maintenance Mode
 
-``` shell
+```shell
 [juan@fractal:~] esxcli system maintenanceMode get
 Disabled
 [juan@fractal:~] esxcli system maintenanceMode set --enable=true
@@ -12,7 +12,7 @@ Enabled
 
 ## List Profiles
 
-``` shell
+```shell
 [juan@fractal:~] esxcli software sources profile list -d /vmfs/volumes/fractal_hdd/VMware-ESXi-7.0U3g-20328353-depot.zip
 .ash_history      bin/              bootpart4kn.gz    lib/              locker/           proc/             scratch/          tardisks/         var/              vmupgrade
 .mtoolsrc         bootbank/         dev/              lib64/            mbr/              productLocker/    store/            tmp/              vmfs/
@@ -29,13 +29,12 @@ ESXi-7.0U3g-20328353-no-tools  VMware, Inc.  PartnerSupported  2022-09-01T00:00:
 
 ## Install Update
 
-``` shell
+```shell
 [juan@fractal:~] esxcli software profile update -d /vmfs/volumes/fractal_hdd/VMware-ESXi-7.0U3g-20328353-depot.zip -p ESXi-7.0U3g-20328353-standard
 ```
 
 ## ESXi Bundle Update Command
 
-``` shell
+```shell
 esxcli software vib update -d "/vmfs/volumes/DellPV-10k/ISO/VMware-VMvisor-Installer-6.5.0.update03-19092475.x86_64-DellEMC_Customized-A09.zip" 
 ```
-

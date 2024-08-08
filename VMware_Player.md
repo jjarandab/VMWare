@@ -4,13 +4,12 @@
 
 run below command to run below `.bat` file
 
-``` cmd
+```cmd
 START /MIN CMD.EXE /C "C:\bkp.bat"
 ```
 
 run.bat
 
-``` cmd
+```cmd
 "C:\Program Files (x86)\VMware\VMware Player\vmrun.exe" start "C:\Virtual Machines\BKP\BKP.vmx" nogui
 ```
-
